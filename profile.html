@@ -3,78 +3,169 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
 		<link rel="stylesheet" href="css/bigvideo.css" />
 		<link rel="stylesheet" href="css/powerup.css" />
 	</head>
 	<body>
 		
-		<header>
-			<div class="brandHeader row">
-				<div class="col-lg-6 logoWrapper">
-					<img src="#" />
+		<header class="innerHeader">
+			
+			<div class="brandHeader">
+				<div class="logoWrapper">
+					<img src="img/logo.png" alt="InStryd Runners Portal Logo" />
 				</div>
-				<div class="col-lg-6 logoLinkWrapper">
-					<a class="navbar-brand" href="#">InStryd</a>
-				</div>
+				
 			</div>
+			
 			<nav class="navbar navbar-default navbar-block" role="navigation">
-			  <div class="container-fluid">
+			  <div class="container-fluid paddingTB10">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#instrydNav">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
+			      
 			    </div>
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="instrydNav">
-			      <ul class="nav navbar-nav">
-			        <li><a href="#">Home</a></li>
-			        <li><a href="#">Events</a></li>
+			    
+			      <ul class="nav navbar-nav interiorNavBar">
+			        <li><a href="index.html">Home</a></li>
+			        <li><a href="search.html">Events</a></li>
 			        <li><a href="#">News</a></li>
-			        <li class="active"><a href="#">Troy</a></li>
+			        <li class="active"><a href="profile.html">Troy</a></li>
 			      </ul>
-			    </div><!-- /.navbar-collapse -->
+			    
 			  </div><!-- /.container-fluid -->
 			</nav>
 		</header>
 
-
-		
-
-
-		<footer> <!-- Start Footer -->
-			<div class="footerContainer container row">
-				<h2 class="footerTitle">Let Us Help You Hit Your Stride</h2>
-				<div class="col-lg-6">
-					<div class="col-lg-12 eventSearchFooterWrapper">
-						<input class="footerSearchBox" type="text" placeholder="Your City" />
-						<a href="" class="btn btnFooterSearch">Find Events</a>
-					</div>
-					<div class="footerBlack copyrightWrapper">
-						<p>Featured In</p>
-						<div class="featuredRow row">
-							<div class="col-lg-4 footerFeaturedImage">
-								<img src="#" />
-							</div>
+		<section class="container">
+			<div class="profileHeaderWrapper">
+				<div class="profileHeader row">
+					<div class="col-lg-6 profileHeadLeft">
+						<div class="profileUserWrapper">
+							<h1 class="profileUsername">User's Name</h1>
+							<p class="profileTagline">Member Since 6/1/2014</p>
 						</div>
-						<p>Copyright InStryd 2014 All Rights Reserved</p>
+						<div class="profilePictureWrapper">
+							<img src="img/Troy.jpg" />
+						</div>
+					</div>
+					<div class="col-lg-6 profileHeadRight">
+						<div class="essentialDataWrapper">
+							<h4 class="essentialDataTitle"> Essential Race Form Data</h4>
+							<ul class="essentialDataList">
+								<li class="essentialDataItem">Height: 6'3"</li>
+								<li class="essentialDataItem">Weight: 310 lbs</li>
+								<li class="essentialDataItem">Blood Type: B+</li>
+								<li class="essentialDataItem">Other Stuff: You find on forms</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="footerBlack newsWrapper">
+				<div class="badgesRow row">
+					<div class="col-lg-offset-6 col-lg-6">
+						<h3 class="profileModuleTitle">Badges</h3>
+						<div class="badgesListWrapper">
+							<ul class="badgesList">
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+								<li class="profileBadge"><img src="http://placehold.it/50x50" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="profileBodyWrapper">
+				<div class="bioRow row">
+					<div class="profileAside col-lg-6">
+						<div class="favoritesWrapper">
+							<h3 class="profileModuleTitle">Favorite Races</h3>
+							<hr class="profileRule">
+							<div class="favoritesCarouselWrapper">
+								<ul class="favoritesCarousel">
+									<li class="favoritesCarouselItem"><img src="http://placehold.it/350x150" /></li>
+									<li class="favoritesCarouselItem"><img src="http://placehold.it/350x150" /></li>
+									<li class="favoritesCarouselItem"><img src="http://placehold.it/350x150" /></li>
+								</ul>
+							</div>
+						</div>
+						<div class="upcomingWrapper">
+							<h3 class="profileModuleTitle">Upcoming Races</h3>
+							<hr class="profileRule">
+							<div class="upcomingCarouselWrapper">
+								<ul class="upcomingCarousel">
+									<li class="upcomingCarouselItem"><img src="http://placehold.it/350x150" /></li>
+									<li class="upcomingCarouselItem"><img src="http://placehold.it/350x150" /></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="profileMain col-lg-6">
+						<h3 class="profileModuleTitle">Runner Bio</h3>
+						<p>Lorem Ipsum. This is the user's biography about what they like to do and why they like to do it. Could also include things that made them join the site, what their goals are, any kinds of bizarre and socially unpopular opinions and beliefs that they hold against their own better judgement. </p>
+						<p>To be honest most people probably won't put a whole lot in here, but others with more long winded tendancies probably will. So we need to make sure that it works well from a design stand point with both nothing and novel length content.</p>
+					</div>
+				</div>
+				<div class="pastEventsRow row">
+					<h3 class="profileModuleTitle">Past Events</h3>
+					<hr class="profileRule">
+					<div class="pastEventsWrapper">
+						<ul class="pastCarousel">
+							<li class="pastCarouselItem"><img src="http://placehold.it/350x150" /></li>
+							<li class="pastCarouselItem"><img src="http://placehold.it/350x150" /></li>
+							<li class="pastCarouselItem"><img src="http://placehold.it/350x150" /></li>
+							<li class="pastCarouselItem"><img src="http://placehold.it/350x150" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer> <!-- Start Footer -->
+			<div class="footerContainer clearfix">
+				<h2 class="footerTitle">Let Us Help You Hit Your Stride</h2>
+				<div class="leftFooterColumn">
+					<div class="eventSearchFooterWrapper clearfix">
+						<div class="searchBoxWrapper">
+							<input class="form-control footerSearchBox" type="text" placeholder="Your City" />
+						</div>
+						<div class="searchButtonWrapper">
+							<a href="#" class="btn btn-block btnFooterSearch">Find Events</a>
+						</div>
+					</div>
+					<div class="footerBlack copyrightWrapper clearfix">
+						<div class="featuredFooterWrapper">
+							<p>Featured In</p>
+							<div class="featuredRow">
+								<div class="footerFeaturedImage">
+									<img src="http://placehold.it/150x100" />
+								</div>
+							</div>
+							<hr>
+							<p>Copyright InStryd 2014 All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+				<div class="footerBlack rightFooterColumn">
+					<div class="newsWrapper">
+						<h3>News for Runners</h3>
 						<ul class="newsList">
 							<li>
-								<span>6/12</span> New Features Announcement
+								<span>6/12</span> <a>New Features Announcement</a>
 							</li>
 							<li>
-								<span>6/8</span> Member Discount on Shoes
+								<span>6/8</span> <a>Member Discount on Shoes</a>
 							</li>
 							<li>
-								<span>6/1</span> Somebody Famous Runs Alot
+								<span>6/1</span> <a>Somebody Famous Runs Alot</a>
 							</li>
 						</ul>
 					</div>
@@ -82,7 +173,8 @@
 			</div>
 		</footer> <!-- End Footer-->
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 		<script type="text/javascript" src="js/main.js"></script>
+
 	</body>
 </html>
