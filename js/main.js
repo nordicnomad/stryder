@@ -3,22 +3,24 @@
 $(document).ready(function() {
     var $rollerHeight = $(window).innerHeight();
     $('.rollerSection').css('height', $rollerHeight);
+    $('.contentRoller').css('height', $rollerHeight);
     
   $(window).resize(function() {
     var $rollerHeight = $(window).innerHeight();
     $('.rollerSection').css('height', $rollerHeight);
+    $('.contentRoller').css('height', $rollerHeight);
   });
 });
 
 
-$('.rollerWrapper h2').on('click', function() {
+$('.rollerWrapper .container h2').on('click', function() {
   var $this;
   var $other;
   var $active;
   var $next;
 
-  if($(this).parent().hasClass('inactive-top')) {
-    $this = $(this).parent();
+  if($(this).parent().parent().hasClass('inactive-top')) {
+    $this = $(this).parent().parent();
     $other = $('.inactive-bottom');
     $active = $('.active-middle');
     $next = $('.inactive-top-top').last();
@@ -32,8 +34,8 @@ $('.rollerWrapper h2').on('click', function() {
     $next.addClass('inactive-top');
     $next.removeClass('inactive-top-top');  
   }
-  if ($(this).parent().hasClass('inactive-bottom')) {
-    $this = $(this).parent();
+  if ($(this).parent().parent().hasClass('inactive-bottom')) {
+    $this = $(this).parent().parent();
     $other = $('.inactive-top');
     $active = $('.active-middle');
     $next = $('.inactive-bottom-bottom').first();

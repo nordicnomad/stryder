@@ -86,6 +86,7 @@ p {
 		margin-bottom: 5px;
 	}
 	.contentRoller {
+
 		position: relative;
 	}
 	.contentRoller h2 {
@@ -101,30 +102,75 @@ p {
 		border-top: none;
 	}
 	.rollerWrapper {
-		padding-top:40px;
-		padding-bottom: 40px;
-		transition: all 2s ease;
+		width: 100%;
+		position: absolute;
+		top: 25%;
+		transition: all 1s ease;
+
 	}
+
 	.rollerWrapper.inactive-top-top, .rollerWrapper.inactive-bottom-bottom {
 		opacity: 0;
-		display: none;
+		transition: all 1s ease;
 	}
 	.rollerWrapper.inactive-top, .rollerWrapper.inactive-bottom {
 		opacity:0.5;
-		transform: scale(0.8);
+		transition: all 1s ease;
 	}
-	.rollerWrapper.inactive-top, .rollerWrapper.inactive-bottom h2 {
+	.rollerWrapper.inactive-top-top {
+		top:0;
+		/*transform: translate(0,5%);*/
+		transition: all 1s ease;
+	}
+	.rollerWrapper.inactive-top {
+		top:5%;
+		/*transform: translate(0,20%);*/
+		transition: all 1s ease;
+	}
+	.rollerWrapper.inactive-bottom {
+		top:75%;
+		/*transform: translate(0,-20%);*/
+		transition: all 1s ease;
+	}
+	.rollerWrapper.inactive-bottom-bottom {
+		top:80%;
+		/*transform: translate(0,-5%);*/
+		transition: all 1s ease;
+	}
+	.rollerWrapper.inactive-top h2 {
 		margin-top: 0;
 		margin-bottom: 0;
 		cursor: pointer;
+		transform: scale(0.8);
+		transition: all 2s ease;
+	}
+	.rollerWrapper.inactive-bottom h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+		cursor: pointer;
+		transform: scale(0.8);
+		transition: all 2s ease;	
+	}
+	.rollerWrapper.inactive-top-top h2 {
+		transform: scale(0.6);
+		transition: all 1.5s ease;
+	}
+	.rollerWrapper.inactive-bottom-bottom h2 {
+		transform: scale(0.6);
+		transition: all 1.5s ease;	
+	}
+	.rollerWrapper.active-middle h2 {
+		transition: all 1.1s ease;	
 	}
 	.rollerFadeContainer {
 		opacity: 0;
-		display:none;
+		display: block;
+		
 	}
 	.active-middle .rollerFadeContainer {
 		opacity: 1;
 		display: block;
+		transition: opacity 1s ease-in 1s;
 	}
 
 /* Header Interior */
@@ -180,20 +226,22 @@ p {
 		padding-bottom: 10px; 
 	}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
 	.rollerIcon {
-		float: none;
-		margin:auto;
-		margin-top: 5px;
-		margin-bottom: 25px;
+		display: none;
 	}
-	.contentRoller p {
-		float: none;
+	.rollerFadeContainer p {
+		float:none;
+		display: block;
+		width: 100%;
 		margin:auto;
+		margin-top: 25px;
 	}
 	.rollerFadeContainer a {
-		float: none; 
-		margin: auto;
+		float: none;
+		display: block;
+		width: 100%;
+		margin:auto;
 		margin-top: 25px;
 	}
 }
