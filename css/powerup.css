@@ -510,9 +510,9 @@ p {
 /* Custom Page Styles */
 	/* Home Page Styles */
 	.benefitsToggleWrapper {
-		background: url('../img/headerBackground.jpg') no-repeat bottom center;
+		background: url('../img/toggleBackground.jpg') no-repeat bottom center;
 		background-color: rgba(0,0,0,0.6);
-		background-size: 100% 100%;
+		background-size: 100%;
 		background-repeat: no-repeat;
 	}
 	.benefitsHeader {
@@ -613,6 +613,9 @@ p {
 		#runnersButton h3 {
 			font-size: 20px;
 			padding-left: 30px;
+		}
+		.benefitsToggleWrapper {
+			background-size: 100% 100%;
 		}
 	}
 	.verticalAccordion {
