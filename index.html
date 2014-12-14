@@ -1,7 +1,8 @@
 <!DOCTYPE HTML> 
-<html>
+<html lang="en">
 	<head>
-		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Instryd | Discover Running Races</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/font-awesome.css" />
 		<link rel="stylesheet" href="css/bigvideo.css" />
@@ -16,7 +17,7 @@
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
 			      
-			      <a class="navbar-brand" href="#">InStryd</a>
+			      <a class="navbar-brand" href="index.html">InStryd</a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -32,152 +33,175 @@
 			</nav>
 
 			<section class="rollerSection"> <!-- Roller Banner-->
-				<div class="rollerIndicators"></div>
+
 				<div class="contentRoller">
 					<div class="rollerWrapper logoSlide active-middle">
 						<div class="container">
-							<h2>inStryd Tagline, whatever it is</h2>
+							<h2>Find Your Stride</h2>
 							<div class="rollerFadeContainer row">
-								<div class="col-xs-12">
-									<img class="rollerLogo" src="img/homeLogo.png" />
+								<div class="col-sm-5">
+									<img class="rollerIcon" src="img/homeLogo.png" />
 								</div>
-							
+								<div class="col-sm-7 col-xs-12"  id="signupSlide" style="display:none;">
+									<p>Get started running inStryd with your friends by creating your account with Facebook.</p>
+									<div>
+										<img src="img/facebookSigninPlacehold.jpg" />
+									</div>
+									<ul class="friendWrapper">
+										<li><img src="http://www.placehold.it/50x50" /></li>
+										<li><img src="http://www.placehold.it/50x50" /></li>
+										<li><img src="http://www.placehold.it/50x50" /></li>
+										<li><img src="http://www.placehold.it/50x50" /></li>
+									</ul>
+								</div>
+								<div class="col-sm-7 col-xs-12"  id="searchSlide" style="display:block;">
+									<div class="searchBoxWrapper">
+										<p>Search out database of curated race events around the country.</p>
+										<input class="form-control searchBox" type="text" placeholder="Enter Your City" />
+									</div>
+									<div class="searchButtonWrapper">
+										<a href="search.html" class="btn btn-block redButton">Find Events</a>
+									</div>
+								</div>
 							</div>
+							
 						</div>
 					</div>
 					<div class="rollerWrapper inactive-bottom">
 						<div class="container">
-							<h2>2. Where Pursuit Meets Satisfaction</h2>
+							<h2>We Go the Extra Mile</h2>
 							<div class="rollerFadeContainer row">
 								<div class="col-sm-5">
-									<img class="rollerIcon" src="img/rollerIcon.png" />
+									<img class="rollerIcon" src="img/extraMile.png" />
 								</div>
 								<div class="col-sm-7 col-xs-12">
-									<p>Lorem Ipsum some text goes here to explain the value of the offering in a way that will engage the customer to click on the shiny button down there. </p>
-									<a href="#" class="btn btn-block whiteButton">Go To There</a>
+									<p>Founded by runners for runners we bring together a community of road warriors to cheer each other on and accomplish goals. Whether its to have fun or win prize money, inStryd is the place for you.</p>
+									<a href="#learnMore" class="btn btn-block whiteButton">Learn More About inStryd</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="rollerWrapper inactive-bottom-bottom">
 						<div class="container">
-							<h2>3. Where Pursuit Meets Satisfaction</h2>
+							<h2>From Start to Finish</h2>
 							<div class="rollerFadeContainer row">
 								<div class="col-sm-5">
 									<img class="rollerIcon" src="img/rollerIcon.png" />
 								</div>
 								<div class="col-sm-7 col-xs-12">
-									<p>Lorem Ipsum some text goes here to explain the value of the offering in a way that will engage the customer to click on the shiny button down there. </p>
-									<a href="#" class="btn btn-block whiteButton">Go To There</a>
+									<p>Find races recommended by your personal running community, get up to date information on changes to those races, and share your accomplishments with people who will cheer you on. </p>
+									<a href="#featuredEvents" class="btn btn-block whiteButton">See Our Featured Races</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="rollerWrapper inactive-bottom-bottom">
 						<div class="container">
-							<h2>4. Where Pursuit Meets Satisfaction</h2>
+							<h2>Get on the Fast Track</h2>
 							<div class="rollerFadeContainer row">
 								<div class="col-sm-5">
 									<img class="rollerIcon" src="img/rollerIcon.png" />
 								</div>
 								<div class="col-sm-7 col-xs-12">
-									<p>Lorem Ipsum some text goes here to explain the value of the offering in a way that will engage the customer to click on the shiny button down there. </p>
-									<a href="#" class="btn btn-block whiteButton">Go To There</a>
+									<p>Filling out race forms and keeping track of races can get complicated. Don't waste money or time with pen and paper methods, our digital signup and race tracking makes complex race schedules a breeze. </p>
+									<a href="event.html" class="btn btn-block whiteButton">See Our Race Pages</a>
 								</div>
 							</div>
 						</div>
 					</div>
+					
 					<div class="rollerWrapper inactive-bottom-bottom">
 						<div class="container">
-							<h2>5. Where Pursuit Meets Satisfaction</h2>
+							<h2>Hit the Ground Running</h2>
 							<div class="rollerFadeContainer row">
 								<div class="col-sm-5">
-									<img class="rollerIcon" src="img/rollerIcon.png" />
+									<img class="rollerIcon" src="img/hitTheGroundRunning.png" />
 								</div>
 								<div class="col-sm-7 col-xs-12">
-									<p>Lorem Ipsum some text goes here to explain the value of the offering in a way that will engage the customer to click on the shiny button down there. </p>
-									<a href="#" class="btn btn-block whiteButton">Go To There</a>
+									<p>Running can be a lonely business, but it doesn't have to be. inStryd allows dedicated runners to find like minded companions and tackle the open road together. </p>
+									<a href="login.html" class="btn btn-block whiteButton">Find Your Friends</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div><!-- End Runner Roller-->
+
 			</section> <!-- End Roller Banner-->
 		</header>
 
 		
 
-		<section class="container"> <!-- Featured Events-->
+		<section class="container" id="featuredEvents"> <!-- Featured Events-->
 			<h2 class="featuredContainerTitle">Featured Events</h2>
 			<div class="featuredContainer row">
 				<div class="featuredWrapper col-lg-3 col-sm-6">
 					<div class="featuredEventImageWrapper">
-						<img src="http://placehold.it/600x600/" class="featuredEventImage" />
+						<img src="img/London_10k.jpg" class="featuredEventImage" />
 					</div>
 					<div class="featuredEventIconBackground">
 						<div class="featuredEventIconWrapper">
-							<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							<span class="featuredEventIcon">2.9 B</span>
 						</div>
 					</div>
 					<div class="featuredEventText">
-						<h4>Race Name</h4>
-						<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						<h4>Brookside Fun Run</h4>
+						<p>Taking participants through the historic and vibrant KC brookside neighborhood, this run benefits many noble organizations where you live. </p>
 					</div>
-					<div class="featuredEventNotice blueNotice"><a href="">Happening Today!</a></div>
+					<div class="featuredEventNotice blueNotice"><a href="event.html">Happening Today!</a></div>
 				</div>
 				<div class="featuredWrapper col-lg-3 col-sm-6">
 					<div class="featuredEventImageWrapper">
-						<img src="http://placehold.it/600x600/" class="featuredEventImage" />
+						<img src="img/Marathon_Barcelona.jpg" class="featuredEventImage" />
 					</div>
 					<div class="featuredEventIconBackground">
 						<div class="featuredEventIconWrapper">
-							<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							<span class="featuredEventIcon">10 M</span>
 						</div>
 					</div>
 					<div class="featuredEventText">
-						<h4>Race Name</h4>
-						<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						<h4>Race for a Cure</h4>
+						<p>Diseases are bad and need to be run into the ground by thousands of well cushioned feet. Get your race on and show diseases who's runs this town. </p>
 					</div>
-					<div class="featuredEventNotice blueNotice"><a href="#">Happening Today!</a></div>
+					<div class="featuredEventNotice blueNotice"><a href="event.html">Happening Today!</a></div>
 				</div>
 				<div class="featuredWrapper col-lg-3 col-sm-6">
 					<div class="featuredEventImageWrapper">
-						<img src="http://placehold.it/600x600/" class="featuredEventImage" />
+						<img src="img/NORTH-KOREA-MARATHON.jpg" class="featuredEventImage" />
 					</div>
 					<div class="featuredEventIconBackground">
 						<div class="featuredEventIconWrapper">
-							<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							<span class="featuredEventIcon">1.5 M</span>
 						</div>
 					</div>
 					<div class="featuredEventText">
-						<h4>Race Name</h4>
-						<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						<h4>Halloween Half</h4>
+						<p>With halloween right around the corner it's time to see who would survive a horror movie chase scene. Do you have what it takes to make it into the sequel? </p>
 					</div>
-					<div class="featuredEventNotice redNotice"><a href="#">12 Weeks!</a></div>
+					<div class="featuredEventNotice redNotice"><a href="event.html">12 Weeks!</a></div>
 				</div>
 				<div class="featuredWrapper col-lg-3 col-sm-6">
 					<div class="featuredEventImageWrapper">
-						<img src="http://placehold.it/600x600/" class="featuredEventImage" />
+						<img src="img/Berlin_marathon.jpg" class="featuredEventImage" />
 					</div>
 					<div class="featuredEventIconBackground">
 						<div class="featuredEventIconWrapper">
-							<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							<span class="featuredEventIcon">100 K</span>
 						</div>
 					</div>
 					<div class="featuredEventText">
-						<h4>Race Name</h4>
-						<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						<h4>Tropical 10k</h4>
+						<p>Running is hard work, but for those who know what they're doing it doesn't have to be unpleasent. Feel the sand in your toes for 6+ miles! </p>
 					</div>
-					<div class="featuredEventNotice redNotice"><a href="#">3 Days!</a></div>
+					<div class="featuredEventNotice redNotice"><a href="event.html">3 Days!</a></div>
 				</div>
 			</div>
 		</section> <!-- End Featured Events-->
 		
-		<section class="benefitsToggleWrapper clearfix">
+		<section class="benefitsToggleWrapper clearfix" id="learnMore">
 			<h2 class="benefitsHeader">We Bring Together</h2>
 			<div class="toggleButtonWrapper">
 				<div id="organizersButton" class="accordionSelectButton">
-					<h3>Event Organizers</h3>
+					<h3>Fun Runners</h3>
 				</div>
 				<div class="absoluteAmpersand"><p>&amp;</p></div>
 				<div id="runnersButton" class="accordionSelectButton active">
@@ -189,7 +213,7 @@
 			<div class="userBenefitsContainer">
 				<div class="row">
 					<div class="accordionSwitchContainer">
-						<div class="accordionSwitchWrapper" id="organizersTab">
+						<!--<div class="accordionSwitchWrapper" id="organizersTab">
 							<ul class="verticalAccordion">
 								<li class="accordionActive">
 									<div>
@@ -204,54 +228,54 @@
 									<div>
 										<div class="accordionToggleWrapper"><img src="img/finishlineIcon.png" /></div>
 									</div>
-									<h4>Reduced Legwork</h4>
+									<h4>Better Run for Your Money</h4>
 									<p>Lorem Ipsum. we help keep race enthusiasts running without running in circles. Organize your valuable time to get the most out of your race season and make sure you do it with the people you enjoy doing it with. </p>
 								</li>
 								<li>
 									<div>
 										<div class="accordionToggleWrapper"><img src="img/medalIcon.png" /></div>
 									</div>
-									<h4>Reduced Legwork</h4>
+									<h4>The Inside Track</h4>
 									<p>Lorem Ipsum. we help keep race enthusiasts running without running in circles. Organize your valuable time to get the most out of your race season and make sure you do it with the people you enjoy doing it with. </p>
 								</li>
 								<li>
 									<div>
 										<div class="accordionToggleWrapper"><img src="img/trophyIcon.png" /></div>
 									</div>
-									<h4>Reduced Legwork</h4>
+									<h4>All Downhill</h4>
 									<p>Lorem Ipsum. we help keep race enthusiasts running without running in circles. Organize your valuable time to get the most out of your race season and make sure you do it with the people you enjoy doing it with. </p>
 								</li>
 							</ul>
-						</div>
+						</div>-->
 						<div class="accordionSwitchWrapper active" id="runnersTab">
 							<ul class="verticalAccordion">
-								<li>
+								<li class="accordionActive">
 									<div>
 										<div class="accordionToggleWrapper"><img src="img/runnerIcon.png" /></div>
 									</div>
-									<h4>Reduced Legwork</h4>
-									<p>Lorem Ipsum. we help keep race enthusiasts running without running in circles. Organize your valuable time to get the most out of your race season and make sure you do it with the people you enjoy doing it with. </p>
+									<h4>Born to Run</h4>
+									<p>We know what passionate runners are about. Remove common hurdles and problems that stand in the way of you and your passion for running. Whether for fun or competition, we're here to help.</p>
 								</li>
 								<li>
 									<div>
 										<div class="accordionToggleWrapper"><img src="img/finishlineIcon.png" /></div>
 									</div>
-									<h4>Reduced Legwork</h4>
-									<p>Lorem Ipsum. we help keep race enthusiasts running without running in circles. Organize your valuable time to get the most out of your race season and make sure you do it with the people you enjoy doing it with. </p>
+									<h4>Get in the Fast Lane</h4>
+									<p>Auto populate participating races registration forms with your saved "Bib" information. Taking signing up for races from a pain to an absolute pleasure. </p>
 								</li>
-								<li class="accordionActive">
+								<li>
 									<div>
 										<div class="accordionToggleWrapper"><img src="img/medalIcon.png" /></div>
 									</div>
-									<h4>Reduced Legwork</h4>
-									<p>Lorem Ipsum. we help keep race enthusiasts running without running in circles. Organize your valuable time to get the most out of your race season and make sure you do it with the people you enjoy doing it with. </p>
+									<h4>No Sweat</h4>
+									<p>Having a ton of races on your schedule can get over whelming, but being able to quickly check your schedule at a glance with Instryd can put even the most hectic runner's mind at ease. </p>
 								</li>
 								<li>
 									<div>
 										<div class="accordionToggleWrapper"><img src="img/trophyIcon.png" /></div>
 									</div>
-									<h4>Reduced Legwork</h4>
-									<p>Lorem Ipsum. we help keep race enthusiasts running without running in circles. Organize your valuable time to get the most out of your race season and make sure you do it with the people you enjoy doing it with. </p>
+									<h4>Go the Distance</h4>
+									<p>Running is a lonely business, but Instryd as a social running platform helps you coordinate your running buddies into a marshalled cheering section that runs your races with you. </p>
 								</li>
 							</ul>
 						</div>
@@ -262,14 +286,14 @@
 
 		<footer> <!-- Start Footer -->
 			<div class="footerContainer clearfix">
-				<h2 class="footerTitle">Let Us Help You Hit Your Stride</h2>
+				<h2 class="footerTitle">Hit Your Stride</h2>
 				<div class="leftFooterColumn">
 					<div class="eventSearchFooterWrapper clearfix">
 						<div class="searchBoxWrapper">
-							<input class="form-control footerSearchBox" type="text" placeholder="Your City" />
+							<input class="form-control footerSearchBox" type="text" placeholder="Enter Your City" />
 						</div>
 						<div class="searchButtonWrapper">
-							<a href="#" class="btn btn-block btnFooterSearch">Find Events</a>
+							<a href="search.html" class="btn btn-block btnFooterSearch">Find Events</a>
 						</div>
 					</div>
 					<div class="footerBlack copyrightWrapper clearfix">
@@ -277,11 +301,13 @@
 							<p>Featured In</p>
 							<div class="featuredRow">
 								<div class="footerFeaturedImage">
+									
 									<img src="http://placehold.it/150x100" />
 								</div>
+
 							</div>
 							<hr>
-							<p>Copyright InStryd 2014 All Rights Reserved</p>
+							<p>&copy; InStryd <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
 						</div>
 					</div>
 				</div>
@@ -290,13 +316,13 @@
 						<h3>News for Runners</h3>
 						<ul class="newsList">
 							<li>
-								<span>6/12</span> <a>New Features Announcement</a>
+								<span>6/12 -</span> <a href="#">5 Tips for Improving Your Recovery</a>
 							</li>
 							<li>
-								<span>6/8</span> <a>Member Discount on Shoes</a>
+								<span>6/8 -</span> <a href="#">What Will it Take to Run a 3-Hour Marathon?</a>
 							</li>
 							<li>
-								<span>6/1</span> <a>Somebody Famous Runs Alot</a>
+								<span>6/1 -</span> <a href="#">KC Native Wins NY Marathon</a>
 							</li>
 						</ul>
 					</div>
@@ -306,7 +332,6 @@
 
 		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bespoke.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

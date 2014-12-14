@@ -1,0 +1,305 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Discover Running Races and Events</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/bigvideo.css" />
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/powerup.css" />
+	</head>
+	<body>
+		
+		<header class="innerHeader">
+			
+			<div class="brandHeader">
+				<div class="logoWrapper">
+					<img src="img/logo.png" alt="InStryd Runners Portal Logo" />
+				</div>
+				
+			</div>
+			
+			<nav class="navbar navbar-default navbar-block" role="navigation">
+			  <div class="container-fluid paddingTB10">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      
+			    </div>
+
+			    
+			      <ul class="nav navbar-nav interiorNavBar">
+			        <li><a href="index.html">Home</a></li>
+			        <li><a href="search.html">Events</a></li>
+			        <li><a href="#">News</a></li>
+			        <li class="active"><a href="profile.html">Troy</a></li>
+			      </ul>
+			    
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<section class="container"> <!-- Events-->
+			<div class="filterRow row">
+				<div class="col-lg-6 filterTitle">
+					<h2>Off to the Races</h2>
+				</div>
+				<div class="col-lg-6 filterControls">
+
+					<div class="displayTypeContainer">
+						<ul>
+							<li><a href="#">Date</a></li>
+							<li><a href="#">Cost</a></li>
+							<li><a href="#">Favorites</a></li>
+							<li><a href="#">Popular</a></li><!-- Based on Signups -->
+						</ul>
+						<!--
+						<div class="displayGridWrapper">
+							<a href="#" class="displayTypeButton" id="eventGrid"><i class="fa fa-th fa-lg"></i></a>
+						</div>
+						<div class="displayRowWrapper active">
+							<a href="#" class="displayTypeButton" id="eventRows"><i class="fa fa-bars fa-lg"></i></a>
+						</div>
+						-->
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="searchResultsContainer" id="searchRow">
+				<div class="row ">
+					<div class="col-md-8 mapSearchContainer">
+						<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:100%;"><div id="gmap_canvas" style="height:500px;width:100%;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.map-embed.com" id="get-map-data">www.map-embed.com</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(40.805478,-73.96522499999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.805478, -73.96522499999998)});infowindow = new google.maps.InfoWindow({content:"<b>The Breslin</b><br/>2880 Broadway<br/> New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+					</div>
+					<div class="col-md-4 searchFormContainer">
+						<form>
+							<div class="topForm">
+								<h4>Date Range</h4>
+								<div class="dateWrapper">
+									<input type="text" class="form-control dateRange" />
+									<p class="dateLabel">to</p>
+									<input type="text" class="form-control dateRange" />
+								</div>
+								<h4>Keywords</h4>
+								<input type="text" class="form-control searchInput" />
+								<h4>Category</h4>
+								<select class="form-control searchCategory">
+									<option>Featured</option>
+									<option>Favorite</option>
+									<option>Category</option>
+								</select>
+							</div>
+							<div class="checkboxWrapper">
+								<div>
+									<input type="checkbox" />
+									<label>First Time</label>
+								</div>
+								<div>
+									<input type="checkbox" />
+									<label>Prizes</label>
+								</div>
+								<div>
+									<input type="checkbox" />
+									<label>Off Road</label>
+								</div>
+								<div>
+									<input type="checkbox" />
+									<label>Charity Run</label>
+								</div>
+							</div>
+							<input type="submit" class="btn btn-block redButton" value="Refine Search" />
+						</form>
+					</div>
+				</div>
+				<div class="eventContainer row">
+					<div class="eventWrapper col-lg-10 col-lg-offset 1">
+						<div class="row">
+
+						</div>
+						<div class="row">
+
+						</div>
+						<div class="row">
+
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<div class="searchResultsContainer" id="searchGrid">
+				<div class="featuredContainer row">
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x fa-bookmark featuredEventIcon"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>Brookside Fun Run</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice blueNotice"><a href="event.html">Happening Today!</a></div>
+					</div>
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>Race for a Cure</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice blueNotice"><a href="event.html">Happening Today!</a></div>
+					</div>
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>Halloween Half-Marathon</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice redNotice"><a href="event.html">12 Weeks!</a></div>
+					</div>
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>Tropical 10k</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice redNotice"><a href="event.html">3 Days!</a></div>
+					</div>
+				</div>
+				<div class="featuredContainer row">
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>March Madness Marathon</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice greenNotice"><a href="event.html">Happening Today!</a></div>
+					</div>
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>Graffiti Run</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice blueNotice"><a href="event.html">Happening Today!</a></div>
+					</div>
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>Neon Run</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice redNotice"><a href="event.html">12 Weeks!</a></div>
+					</div>
+					<div class="featuredWrapper col-lg-3 col-md-6 col-sm-6">
+						<div class="featuredEventImageWrapper">
+							<img src="http://placehold.it/600x600" class="featuredEventImage" />
+						</div>
+						<div class="featuredEventIconBackground">
+							<div class="featuredEventIconWrapper">
+								<i class="fa fa-3x featuredEventIcon fa-bookmark"></i>
+							</div>
+						</div>
+						<div class="featuredEventText">
+							<h4>Street Stride 5k</h4>
+							<p>Lorem ipsum. This is text describing the event being featured here. It should be enticing and offer readers something of what to expect. </p>
+						</div>
+						<div class="featuredEventNotice redNotice"><a href="event.html">3 Days!</a></div>
+					</div>
+				</div>
+			</div>
+		</section> <!-- End Featured Events-->
+
+		<footer> <!-- Start Footer -->
+			<div class="footerContainer clearfix">
+				<h2 class="footerTitle">Hit Your Stride</h2>
+				<div class="leftFooterColumn">
+					<div class="eventSearchFooterWrapper clearfix">
+						<div class="searchBoxWrapper">
+							<input class="form-control footerSearchBox" type="text" placeholder="Enter Your City" />
+						</div>
+						<div class="searchButtonWrapper">
+							<a href="#" class="btn btn-block btnFooterSearch">Find Events</a>
+						</div>
+					</div>
+					<div class="footerBlack copyrightWrapper clearfix">
+						<div class="featuredFooterWrapper">
+							<p>Featured In</p>
+							<div class="featuredRow">
+								<div class="footerFeaturedImage">
+									<img src="http://placehold.it/150x100" />
+								</div>
+							</div>
+							<hr>
+							<p>Copyright InStryd 2014 All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+				<div class="footerBlack rightFooterColumn">
+					<div class="newsWrapper">
+						<h3>News for Runners</h3>
+						<ul class="newsList">
+							<li>
+								<span>6/12 -</span> <a href="#">5 Tips for Improving Your Recovery</a>
+							</li>
+							<li>
+								<span>6/8 -</span> <a href="#">What Will it Take to Run a 3-Hour Marathon?</a>
+							</li>
+							<li>
+								<span>6/1 -</span> <a href="#">KC Native Wins NY Marathon</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer> <!-- End Footer-->
+
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

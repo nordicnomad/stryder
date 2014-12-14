@@ -72,28 +72,28 @@ $('#runnersTab .verticalAccordion li').click(function() {
 });
 
 //Vertical Accordion Switch
-$('#organizersButton').click(function() {
-	$('#organizersTab,#organizersButton').addClass('active');
-	$('#runnersTab,#runnersButton').removeClass('active');
-});
+//$('#organizersButton').click(function() {
+//	$('#organizersTab,#organizersButton').addClass('active');
+//	$('#runnersTab,#runnersButton').removeClass('active');
+//});
 
-$('#runnersButton').click(function() {
-	$('#runnersTab,#runnersButton').addClass('active');
-	$('#organizersTab,#organizersButton').removeClass('active');
-});
+//$('#runnersButton').click(function() {
+//	$('#runnersTab,#runnersButton').addClass('active');
+//	$('#organizersTab,#organizersButton').removeClass('active');
+//});
 
 // Profile Page Owl Sliders
 $(document).ready(function() {
  
   $("#favorites").owlCarousel({
-      items : 3,
+      items : 4,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3],
       navigation : true,
       navigationText : ['<i class="fa fa-2x fa-angle-left"></i>', '<i class="fa fa-2x fa-angle-right"></i>']
   });
   $("#upcoming").owlCarousel({
-      items : 2,
+      items : 4,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3],
       navigation : true,
@@ -117,4 +117,26 @@ $(document).ready(function() {
       navigation : true,
       navigationText : ['<i class="fa fa-2x fa-angle-left"></i>', '<i class="fa fa-2x fa-angle-right"></i>']
   });
+});
+
+
+// Smooth Scroll Test
+$("a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(this.hash).offset().top
+     }, 500, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
 });
