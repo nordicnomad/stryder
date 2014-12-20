@@ -60,11 +60,17 @@ p {
 	.navbar-default .navbar-nav>li>a {
 		color: #fff;
 	}
+	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus  {
+		color: #ddd;
+	}
 	.homeHeader .navbar-brand {
 		font-family: 'hollow_bold_reg', Arial, sans-serif;
 		color:#fff;
 		padding: 4px 15px 0 15px;
 		max-width: 100%;
+	}
+	.homeHeader .navbar-brand img {
+		max-height: 36px;
 	}
 	.rollerSection {
 		background-color: rgba(0,0,0,0.7);
@@ -89,7 +95,7 @@ p {
 		width: 200px;
 		display: block;
 		float:right;
-		margin-top: 5px;
+		margin-top: 20px;
 		margin-bottom: 5px;
 	}
 	.contentRoller {
@@ -100,7 +106,7 @@ p {
 		text-align: center;
 	}
 	.contentRoller p {
-		max-width: 300px;
+		max-width: 320px;
 		float:left;
 		text-align: left;
 		margin-top: 30px;
@@ -266,18 +272,20 @@ p {
 	.rollerFadeContainer .searchBoxWrapper {
 		width: 60%;
 		max-width: 100%;
-		min-width: 300px;
+		
 		margin-top: 40px;
 		margin-bottom: 10px;
 		float: none;
 	}
 	.rollerFadeContainer .searchBoxWrapper p {
 		margin-top: 0;
+		margin-bottom: 15px;
+		text-align: center;
+		max-width: none;
 	}
 	.rollerFadeContainer .searchButtonWrapper {
 		width: 60%;
 		max-width: 100%;
-		min-width: 300px;
 		float: none;
 	}
 	.rollerFadeContainer .searchBox {
@@ -289,7 +297,7 @@ p {
 		text-align: center;
 	}
 	.rollerFadeContainer .redButton {
-		max-width: 320px;
+		max-width: 100%;
 		margin-left: 0;
 	}
 
@@ -335,8 +343,8 @@ p {
 	}
 	.interiorNavBar li {
 		border-right: 1px solid #fff;
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.interiorNavBar li a {
 		padding: 8px 15px;
@@ -376,7 +384,7 @@ p {
 	}
 	.navbar-nav li {
 		display: inline-block;
-		padding: 0 3px;
+		padding: 0;
 	}	
 	.homeHeader .navbar-nav>li>a {
 		padding: 8px 10px;
@@ -924,13 +932,14 @@ p {
 	.filterTitle h2 {
 		font-family: 'Open Sans', Arial, sans-serif;
 		padding-left: 25px;
+		color: #fff;
 	}
 	.filterControls {
 		margin-bottom: 15px;
 	}
 	.filterControls ul {
 		margin-top: 20px;
-		border: 2px solid #333;
+		border: 2px solid #fff;
 		padding: 5px;
 		width: auto;
 		display: inline-block;
@@ -938,7 +947,7 @@ p {
 	.filterControls li {
 		display: inline-block;
 		width: auto;
-		border-right: 1px solid #333;
+		border-right: 1px solid #fff;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -946,7 +955,7 @@ p {
 		border: none;
 	}
 	.filterControls a {
-		color: #333;
+		color: #fff;
 	}
 	.filterControls a:hover {
 		color: #d62e3a;
@@ -1107,6 +1116,7 @@ p {
 	@media screen and (max-width: 500px) {
 		.displayTypeContainer, .displayTypeContainer ul {
 			width: 100%;
+			display:none;
 		}
 		.filterControls li {
 			padding:0 10px;
@@ -1137,6 +1147,7 @@ p {
 	}
 	.eventMap  {
 		max-width: 100%;
+		border: 3px solid #333;
 	}
 	.eventLogo {
 		max-width: 100%;
@@ -1197,7 +1208,7 @@ p {
 		background-color: #333;
 		border: 2px solid #000;
 		color: #fff;
-		max-height: 300px;
+		
 		overflow: visible;
 	}
 	.profileBodyWrapper, .bioRow, .pastEventsRow, .badgesRow, .profileHeader {
@@ -1217,9 +1228,10 @@ p {
 		margin-left: 30px;
 	}
 	.profileUserWrapper {
-		max-width: 300px;
+		
 		display: block;
-		margin:auto;
+		margin-left: 30px;
+		margin-bottom: 20px;
 	}
 	.profilePictureWrapper {
 		width: auto;
@@ -1233,23 +1245,41 @@ p {
 	}
 	.profileHeadRight {
 		height: 100%;
-		min-height: 300px;
+		
 	}
 	.essentialDataWrapper {
 		background-color: #111;
 		border: 2px solid #000;
-		margin: 0 5% 0 0;
+		margin: 0 0 20px 0;
 		height: 100%;
-		min-height: 298px;
-		width: 95%;
+		width: 100%;
+		color: #fff;
+	}
+	.essentialDataWrapper .redButton {
+		margin-top: 35px;
+		padding: 4px 12px;
 	}
 	.essentialDataTitle {
 		font-family: 'Open Sans', Arial, sans-serif;
 		text-align: center; 
+		color: #fff;
+	}
+	h5.essentialDataTitle {
+		text-align: left;
+		padding-left: 15px;
+		color: #fff;
 	}
 	.essentialDataList {
 
 	}
+
+@media screen and (max-width:767px) {
+	.essentialDataWrapper {
+		width: 100%;
+		margin: 0;
+	}
+}
+
 /* Footer Styles */
 	footer {
 		color: #fff;
@@ -1333,7 +1363,7 @@ p {
 		max-height: 100px;
 	}
 	.footerFeaturedImage img {
-		max-width: 150px;
+		max-width: 182px;
 		display: inline-block;
 	}
 	.newsWrapper {
@@ -1369,6 +1399,9 @@ p {
 	}
 	.newsList li span {
 		font-size: 20px;
+	}
+	.newsList li a:hover {
+		color: #d62e3a;
 	}
 
 
@@ -1417,13 +1450,19 @@ p {
 		width: 100%;
 		min-width: 100%;
 	}
+	.rollerFadeContainer .searchBoxWrapper {
+		min-width: 100%;
+		margin: auto;
+	}
 }
 
 @media screen and (max-width: 767px) {
 	.interiorNavBar, .interiorNavBar li {
 		border:none;
 	}
-
+	.innerHeader .navbar-nav {
+		width: 305px;
+	}
 	.newsWrapper {
 		padding:0;
 	}

@@ -122,21 +122,43 @@ $(document).ready(function() {
 
 // Smooth Scroll Test
 $("a[href^='#']").on('click', function(e) {
-
-   // prevent default anchor click behavior
    e.preventDefault();
-
-   // store hash
    var hash = this.hash;
 
-   // animate
    $('html, body').animate({
        scrollTop: $(this.hash).offset().top
      }, 500, function(){
-
-       // when done, add hash to url
-       // (default click behaviour)
        window.location.hash = hash;
      });
 
 });
+
+// Profile Image Height Adjustment
+$(document).ready(function() {
+  var windowHeight = window.innerWidth;
+  var imageHeight = $('#userImage').height(); 
+  var wrapperHeight = $('.profileHeader').height();
+  var variableMargin = (wrapperHeight - imageHeight)/2;
+
+  if(windowHeight >= 992) {
+    $('#userImage').css('margin-top', variableMargin);
+  }
+  else {
+    $('#userImage').css('margin-top', '15px'); 
+  }
+  
+  $(window).resize(function() {
+    windowHeight = window.innerWidth;
+    imageHeight = $('#userImage').height(); 
+    wrapperHeight = $('.profileHeader').height();
+    variableMargin = (wrapperHeight - imageHeight)/2;
+    if(windowHeight >= 992) {
+      $('#userImage').css('margin-top', variableMargin);
+    }
+    else {
+      $('#userImage').css('margin-top', '15px'); 
+    }  
+  });
+
+});
+ 
